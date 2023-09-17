@@ -32,7 +32,7 @@ class BracketsCheckerApplicationTests {
 				Arguments.of("abv", true),
 				Arguments.of("abv()", false),
 				Arguments.of("(b)", true),
-				Arguments.of("((b))", true),
+				Arguments.of("((b))", false),
 				Arguments.of(null, false),
 				Arguments.of("", true),
 				Arguments.of("     ", true)
