@@ -8,3 +8,8 @@ https://beautifulcode.sber.ru/task/java
 Сделал CI/CD пайплайн.
 
 Swagger доступен по адресу http://91.210.169.5:8080/swagger-ui/index.html
+
+для запуска локально можоно использовать docker-compose
+```
+docker-compose up -d
+```
