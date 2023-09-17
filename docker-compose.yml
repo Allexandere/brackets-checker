@@ -2,7 +2,7 @@ version: '3'
 
 services:
   back:
-    build: .
+    build: docker
     image: checker
     container_name: checker
     ports:
