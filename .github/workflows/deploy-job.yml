@@ -22,10 +22,11 @@ jobs:
     needs: test
     runs-on: self-hosted
     steps:
+      - working-directory: ./docker
       - name: checkout repo
         uses: actions/checkout@v3
       - name: Stop and remove containers, networks
-        run: docker-compose down --file ./docker/docker-compose.yml
+        run: docker-compose down
       - name: Stop and remove containers, networks
         run: docker rm -vf $(docker ps -aq)
       - name: Remove unused data
@@ -34,7 +35,8 @@ jobs:
     runs-on: self-hosted
     needs: prepare-environment
     steps:
+      - working-directory: ./docker
       - name: checkout repo
         uses: actions/checkout@v3
       - name: docker-compose
-        run: docker-compose up -d --file ./docker/docker-compose.yml
+        run: docker-compose up -d
