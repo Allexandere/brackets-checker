@@ -1,4 +1,5 @@
 [![Deploy buy runner](https://github.com/Allexandere/brackets-checker/actions/workflows/deploy-job.yml/badge.svg)](https://github.com/Allexandere/brackets-checker/actions/workflows/deploy-job.yml)
+
 Мое решение для конкурса красоты кода
 https://beautifulcode.sber.ru/task/java
 
