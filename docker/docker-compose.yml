@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  back:
+    build: .
+    image: checker
+    container_name: checker
+    ports:
+      - "8080:8080"
