@@ -21,7 +21,7 @@ class BracketsCheckerApplicationTests {
 
 	@ParameterizedTest
 	@MethodSource("provideStringsForIsBlank")
-	void contextLoads(String text, boolean expected) {
+	void checkVariousTextsTest(String text, boolean expected) {
 		ResponseDto actual = bracketsCheckerService.checkBrackets(new RequestDto(text));
 
 		assertEquals(expected, actual.isCorrect());
